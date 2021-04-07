@@ -190,6 +190,11 @@ volatile底层是用CPU的**内存屏障**（Memory Barrier）指令来实现的
 
 常见的DCL（Double Check Lock）模式虽然加了同步，但是在多线程下依然会有线程安全问题。
 
+####测试
+
+```java
+
+
 ```java
 public class SingletonDemo {
     private static SingletonDemo singletonDemo=null;
