@@ -251,17 +251,6 @@ public class CASDemo {
 
 ## CAS底层原理
 
-### 测试
-
-```java
-public final int getAnddAddInt(Object var1,long var2,int var4){
-    int var5;
-    do{
-        var5 = this.getIntVolatile(var1, var2);
-    } while(!this.compareAndSwapInt(var1, var2, var5, var5 + var4));
-    return var5;
-}
-
 
 `AtomicInteger`内部维护了`volatile int value`和`private  static final Unsafe unsafe`两个比较重要的参数。
 
